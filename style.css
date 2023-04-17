@@ -2,8 +2,49 @@
     text-align: center;
 }
 
+.calculator-container{
+    margin: auto;
+    text-align: center;
+    max-width: 70%;
+}
+
 .calc-buttons-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'reStartButton delete remainer divisor'
+                         'seven eight nine x'
+                         'four five six -'
+                         'one two three plus'
+                         '. cero point equalToButton';
 }
+
+
+/*Operands buttons section*/
+.reStartButton{
+grid-area: reStartButton;
+}
+.deleteButton{
+    grid-template-columns: delete;
+}
+
+.equalToButton {
+    grid-area: equalToButton;
+}
+.plusButton{ grid-area: plus;}
+.remainer{ grid-area: remainer;}
+.divisor{ grid-area: divisor;}
+.pointButton{grid-area: point;}
+
+
+/*Number buttons section*/
+.one{grid-area: one;}
+.two{grid-area: two;}
+.three{grid-area: three;}
+.four{grid-area: four;}
+.five{grid-area: five;}
+.six{grid-area: six;}
+.seven{grid-area: seven;}
+.eight{grid-area: eight;}
+.nine{grid-area: nine;}
+.cero{grid-area: cero;}
