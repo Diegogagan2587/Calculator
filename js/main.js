@@ -1,1 +1,1 @@
-alert('javascript is workig properly');
+console.log('javascript file is working properly');
