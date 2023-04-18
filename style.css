@@ -11,7 +11,16 @@
     grid-template-rows: 1fr 1fr;
 }
 
+.screenCalculator{
+    text-align: center;
+    margin: auto;
+    font-size: 300%;
+}
+
+
+
 .calc-buttons-container{
+    /*only containes the butotn section*/
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
