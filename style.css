@@ -12,9 +12,11 @@
 }
 
 .screenCalculator{
+    width: 100%;
+    height: 100%;
     text-align: center;
-    margin: auto;
     font-size: 300%;
+    background-color: aliceblue;
 }
 
 
