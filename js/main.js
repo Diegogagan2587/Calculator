@@ -14,5 +14,11 @@ function addElementsToScreen(e){
     if(buttonText == 'Clear'){
         screenText = '';
     }
+    if(buttonText == 'Deleted'){
+        screenText = document.getElementById('screenCalculator').querySelector('p').innerText;
+        console.log('before remobing=',screenText)
+        screenText = screenText.slice(0,-1);
+        console.log('after removing last element=',screenText);
+    }
     return document.getElementById('screenCalculator').querySelector('p').innerText = screenText;
 }
