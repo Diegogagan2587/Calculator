@@ -3,6 +3,7 @@
 }
 
 .calculator-container{
+    /*Contains Calculator, buttons and calculator screen*/
     margin: auto;
     text-align: center;
     max-width: 50%;
@@ -23,7 +24,7 @@
 .calc-buttons-container button{
     background-color: rgb(210, 214, 218);
     width:100%;
-    min-height: 30px;
+    min-height: 35px;
     border-radius: 5%;
     
 }
