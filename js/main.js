@@ -1,3 +1,5 @@
+//how to add the event listener /*https://youtu.be/GUTt0qKUDyU*/
+
 console.log('javascript file is working properly');
 
 const calcButtonsContainer = document.getElementById('CalcButtonsContainer');
