@@ -11,5 +11,8 @@ function addElementsToScreen(e){
     let buttonText = e.target.innerText;
     console.log(screenText,buttonText);
     screenText += buttonText;
+    if(buttonText == 'Clear'){
+        screenText = '';
+    }
     return document.getElementById('screenCalculator').querySelector('p').innerText = screenText;
 }
