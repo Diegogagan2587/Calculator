@@ -48,7 +48,9 @@ function getCalculatedResult(str){
         result = (+arrFromStr[0])-(+arrFromStr[1]);
     } else if( operand == 'x'|'X'){
         result = (+arrFromStr[0])*(+arrFromStr[1]);
-    }
+    } else if( operand == '/'){
+        result = (+arrFromStr[0])/(+arrFromStr[1]);
+    } 
     console.log('result = ',result);
     return result;
 }
