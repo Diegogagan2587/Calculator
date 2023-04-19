@@ -29,11 +29,11 @@ function addElementsToScreen(e){
 //helper functions below;
 function getCalculatedResult(str){
     let result;
-    let arrFromStr = str.split(/[^0-9]/);
+    let arrFromStr = str.split(/[^0-9|.]/);
     let operand = str.split(/[0-9]/);
     console.log('running getResult(',str,')');
     operand = operand.filter((element)=>{
-        if(element && element!= '='){
+        if(element && element!= '=' && element != '.'){
             return element;
         }
     })
@@ -53,6 +53,7 @@ function getCalculatedResult(str){
     } else if(operand == '%'){
         result = (+arrFromStr[0])*(+arrFromStr[1]/100);
     }
+    console.log('str=',str,'arr =',arrFromStr,'operand =',operand)
     console.log('result = ',result);
     return result;
 }
