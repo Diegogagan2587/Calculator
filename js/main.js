@@ -50,7 +50,9 @@ function getCalculatedResult(str){
         result = (+arrFromStr[0])*(+arrFromStr[1]);
     } else if( operand == '/'){
         result = (+arrFromStr[0])/(+arrFromStr[1]);
-    } 
+    } else if(operand == '%'){
+        result = (+arrFromStr[0])*(+arrFromStr[1]/100);
+    }
     console.log('result = ',result);
     return result;
 }
